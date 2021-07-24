@@ -1,0 +1,12 @@
+version: "3"
+services:
+  front:
+    image: node:16.5.0-alpine3.11
+    working_dir: "/var/www/app"
+    environment:
+      - HOST=0.0.0.0
+    ports:
+      - "9000:3000"
+    volumes:
+      - ./app:/var/www/app
+    command: sh -c "npm install && npm run build && npm run start"

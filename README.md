@@ -1,2 +1,2 @@
-# nuxt-standart-docker
-Докер для стандартных проектов на nuxt
+# nuxt-docker-compose
+Nuxt sample
